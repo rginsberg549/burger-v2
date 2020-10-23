@@ -1,7 +1,7 @@
 <li>
 	{{burger_name}}
 
-	<button class="change-devoured" data-id="{{id}}" data-devoured="{{is_devoured}}">
+	<button class="change-devoured  m-3 {{#if is_devoured}} btn btn-secondary{{else}}btn btn-primary{{/if}}" data-id="{{id}}" data-devoured="{{is_devoured}}">
 		{{#if is_devoured}}Devoured!{{else}}Devour It!{{/if}}
 	</button>
 
